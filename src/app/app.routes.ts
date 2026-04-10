@@ -7,6 +7,7 @@ import { HeaderComponent } from './loan/ObservablePattern/Components/HeaderCompo
 import { ProductList } from './loan/ObservablePattern/Components/ProductList/product-list/product-list';
 import { BankGlobal } from './GlobalStore/Components/bank-global/bank-global';
 import { Product } from './ProductApp/Components/product/product';
+import { Test } from './OnPushandLazyLoading/test/test';
 
 export const routes: Routes = [
     { path: 'loan', component: LoanPageComponent },
@@ -16,5 +17,6 @@ export const routes: Routes = [
     { path: 'header', component: HeaderComponent },
     { path: 'products', component: ProductList },
     { path: 'bank', component: BankGlobal },
-    { path: 'product', component: Product }
+    { path: 'product', component: Product },
+    { path: 'test', component: Test }
 ];
