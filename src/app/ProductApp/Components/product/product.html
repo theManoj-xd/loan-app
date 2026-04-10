@@ -1,0 +1,26 @@
+<h1>Product CRUD Opertions</h1>
+<h3>List of Products</h3>
+<table border ="1">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products | async">
+            <td>{{ product.id }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.description }}</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+
+<button (click)="addProduct()">Add Product</button>
+<button (click)="updateProduct()">Update Product</button>
+<button (click)="deleteProduct()">Delete Product</button>
+

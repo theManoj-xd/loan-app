@@ -1,0 +1,6 @@
+<h1>Live Products</h1>
+<button (click)="addManualProducts()">Add  Product</button>
+<div *ngFor="let p of products$|async">
+{{p.productName}} - Rs{{p.price}}
+ 
+</div>

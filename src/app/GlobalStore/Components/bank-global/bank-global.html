@@ -1,0 +1,9 @@
+<h1> Bank Global Store Example</h1>
+<h2>Balance: {{ balance | async }}</h2>
+<button (click)="deposit()">Deposit</button>
+<button (click)="withdraw()">Withdraw</button>
+<button (click)="load()">Load from Server</button>
+
+@if(loading | async){
+  <p>Loading...</p>
+}

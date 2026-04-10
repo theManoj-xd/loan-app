@@ -1,0 +1,4 @@
+<h2>Loan Application</h2>
+@for (loan of loans; track loan.id) {
+  <app-loan-card [loan]="loan" (approve)="approveLoan(loan.id)"></app-loan-card>
+}

@@ -1,0 +1,13 @@
+<div>
+    <h3>Loan Details</h3>
+ 
+    <p>Borrower Name: {{ loan.borrowerName }}</p>
+    <p>Loan Amount: {{ loan.amount }}</p>
+    @if (loan.status === 'approved') {
+      <p style="color:green">Status: Approved</p>
+    }
+    @if (loan.status === 'pending') {
+      <p style="color:orange">Status: Pending</p>
+    }
+    <button (click)="approve.emit(loan)">Approve</button>
+</div>
