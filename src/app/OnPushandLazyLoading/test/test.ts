@@ -1,9 +1,10 @@
 import { Component, ChangeDetectionStrategy, Input } from '@angular/core';
 import { HighlightDirective } from "../highlight";
+import { EvenoddPipe } from "../evenodd-pipe";
 
 @Component({
   selector: 'app-test',
-  imports: [HighlightDirective],
+  imports: [HighlightDirective, EvenoddPipe],
   templateUrl: './test.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrl: './test.css'
